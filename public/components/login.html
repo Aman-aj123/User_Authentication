@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     <title>Login</title>
+</head>
+
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+     <div class="bg-white p-8 rounded shadow-md w-full md:w-96">
+          <h2 class="text-3xl font-semibold text-center mb-6">Login</h2>
+
+          <form action="/login" method="post">
+               <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email</label>
+                    <input required type="email" id="email" name="email" autocomplete="off"
+                         class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+               </div>
+               <div class="mb-6">
+                    <label for="password" class="block text-gray-700 text-sm font-medium mb-2">Password</label>
+                    <input required type="password" id="password" name="password" autocomplete="off"
+                         class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+               </div>
+
+               <button type="submit"
+                    class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
+                    Login
+               </button>
+          </form>
+
+          <div class="mt-6 text-center">
+               <p class="text-sm text-gray-600">Don't have an account? <a href="/sign-up.html"
+                         class="text-blue-500 hover:underline">Sign Up</a></p>
+          </div>
+     </div>
+
+</body>
+
+</html>
